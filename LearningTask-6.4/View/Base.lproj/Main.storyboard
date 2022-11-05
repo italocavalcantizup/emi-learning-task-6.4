@@ -27,22 +27,24 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="uVz-5F-769" userLabel="Container Cell Stack View">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="168.5"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-Eg-EGK" userLabel="Pokemon Info Stack View">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-vW-dug" userLabel="Wrapping Info Stack View">
                                                     <rect key="frame" x="20" y="24" width="230" height="120.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokémon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08w-Oa-9zD" userLabel="Pokemon Title Label">
-                                                            <rect key="frame" x="0.0" y="0.0" width="230" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-yv-7rS" userLabel="Pokemon Type View" customClass="TipoDePokemonView" customModule="LearningTask_6_4" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="32" width="230" height="24"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="fN1-9J-gb6" userLabel="Padding View">
-                                                            <rect key="frame" x="0.0" y="64" width="230" height="31.5"/>
-                                                        </view>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vO4-SP-ZHL" userLabel="Evolucao Container Stack View">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-Eg-EGK" userLabel="Pokemon Info Stack View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="230" height="56"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokémon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08w-Oa-9zD" userLabel="Pokemon Title Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="230" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-yv-7rS" userLabel="Pokemon Type View" customClass="TipoDePokemonView" customModule="LearningTask_6_4" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="32" width="230" height="24"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vO4-SP-ZHL" userLabel="Evolucao Container Stack View">
                                                             <rect key="frame" x="0.0" y="103.5" width="230" height="17"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evolui para:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9R2-r9-BaN" userLabel="Pokemon Evolui Para Label">
@@ -51,7 +53,7 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Pokémon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6C-KU-oYc" userLabel="Pokemon Evolui Para Label">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Pokémon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6C-KU-oYc" userLabel="Pokemon Evolui Para Label">
                                                                     <rect key="frame" x="76" y="0.0" width="154" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                                                     <nil key="textColor"/>
