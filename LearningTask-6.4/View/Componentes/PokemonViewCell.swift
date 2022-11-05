@@ -17,7 +17,9 @@ class PokemonViewCell: UITableViewCell {
     func setup(_ pokemon: Pokemon) {
         pokemonTitleLabel.text = pokemon.nome
         pokemonImageView.image = UIImage(named: pokemon.referencia)
-        pokemonEvolucaoLabel.text = pokemon.evolucoes?.first?.nome ?? "N/A"
         pokemonTypeView.set(pokemon.tipo)
+        pokemonEvolucaoLabel.text = pokemon.evolucoes?
+            .map({ $0.nome })
+            .joined(separator: ", ") ?? "N/A"
     }
 }
